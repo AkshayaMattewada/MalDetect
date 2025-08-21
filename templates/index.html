@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Malware Detector</title>
+    <style>
+        body {
+            background-color: #f5f8ff;
+            font-family: Arial;
+            text-align: center;
+            margin-top: 100px;
+        }
+        input[type=file], input[type=submit] {
+            padding: 10px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Upload a File for Malware Detection</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".exe" required><br>
+        <input type="submit" value="Scan">
+    </form>
+</body>
+</html>
